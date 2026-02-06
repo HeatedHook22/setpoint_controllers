@@ -1,0 +1,36 @@
+[0.018s] Invoking command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller
+[0.033s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.175s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.182s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.429s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.432s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.438s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.447s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.459s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.489s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.490s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.550s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.595s] -- Found px4_msgs: 2.0.1 (/home/heated_2204/px4_globals/install/px4_msgs/share/px4_msgs/cmake)
+[9.605s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[9.615s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.698s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.699s] -- Configured cppcheck include dirs: 
+[9.699s] -- Configured cppcheck exclude dirs and/or files: 
+[9.699s] -- Added test 'lint_cmake' to check CMake code style
+[9.700s] -- Added test 'uncrustify' to check C / C++ code style
+[9.700s] -- Configured uncrustify additional arguments: 
+[9.701s] -- Added test 'xmllint' to check XML markup files
+[9.702s] -- Configuring done
+[9.715s] -- Generating done
+[9.722s] -- Build files have been written to: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller
+[9.734s] Invoked command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller
+[9.736s] Invoking command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller -- -j16 -l16
+[9.803s] [ 50%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o[0m
+[9.833s] [100%] [32m[1mLinking CXX executable att_sp_ctrl[0m
+[10.105s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[10.105s] (.text+0x1b): undefined reference to `main'
+[10.108s] collect2: error: ld returned 1 exit status
+[10.111s] gmake[2]: *** [CMakeFiles/att_sp_ctrl.dir/build.make:175: att_sp_ctrl] Error 1
+[10.111s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/att_sp_ctrl.dir/all] Error 2
+[10.112s] gmake: *** [Makefile:146: all] Error 2
+[10.115s] Invoked command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller -- -j16 -l16

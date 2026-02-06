@@ -1,0 +1,52 @@
+[0.021s] Invoking command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller
+[0.324s] -- The C compiler identification is GNU 11.4.0
+[1.220s] -- The CXX compiler identification is GNU 11.4.0
+[1.855s] -- Detecting C compiler ABI info
+[2.092s] -- Detecting C compiler ABI info - done
+[2.099s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.099s] -- Detecting C compile features
+[2.100s] -- Detecting C compile features - done
+[2.103s] -- Detecting CXX compiler ABI info
+[2.352s] -- Detecting CXX compiler ABI info - done
+[2.359s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.359s] -- Detecting CXX compile features
+[2.360s] -- Detecting CXX compile features - done
+[2.382s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.556s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.637s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.698s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[2.979s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.988s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.005s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.031s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.059s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.139s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.146s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.432s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.790s] -- Found FastRTPS: /opt/ros/humble/include  
+[12.145s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.164s] -- Looking for pthread.h
+[12.396s] -- Looking for pthread.h - found
+[12.397s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[12.640s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[12.642s] -- Found Threads: TRUE  
+[12.735s] -- Found px4_msgs: 2.0.1 (/home/heated_2204/px4_globals/install/px4_msgs/share/px4_msgs/cmake)
+[12.759s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[12.788s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[12.897s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.897s] -- Configured cppcheck include dirs: 
+[12.897s] -- Configured cppcheck exclude dirs and/or files: 
+[12.899s] -- Added test 'lint_cmake' to check CMake code style
+[12.901s] -- Added test 'uncrustify' to check C / C++ code style
+[12.901s] -- Configured uncrustify additional arguments: 
+[12.902s] -- Added test 'xmllint' to check XML markup files
+[12.907s] -- Configuring done
+[12.913s] [31mCMake Error at CMakeLists.txt:26 (add_executable):
+[12.913s]   Target "att_sp_ctrl" links to target "px4_msgs::px4_msgs_library" but the
+[12.913s]   target was not found.  Perhaps a find_package() call is missing for an
+[12.913s]   IMPORTED target, or an ALIAS target is missing?
+[12.913s] 
+[12.913s] [0m
+[12.927s] -- Generating done
+[12.928s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[12.944s] Invoked command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller

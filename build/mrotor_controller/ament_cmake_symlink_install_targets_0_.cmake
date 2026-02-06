@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/att_sp_ctrl" "TARGETS" "att_sp_ctrl" "DESTINATION" "lib/mrotor_controller")

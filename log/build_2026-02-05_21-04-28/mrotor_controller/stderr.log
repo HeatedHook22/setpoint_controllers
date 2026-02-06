@@ -1,0 +1,7 @@
+[31mCMake Error at CMakeLists.txt:26 (add_executable):
+  Target "att_sp_ctrl" links to target "px4_msgs::px4_msgs_library" but the
+  target was not found.  Perhaps a find_package() call is missing for an
+  IMPORTED target, or an ALIAS target is missing?
+
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m

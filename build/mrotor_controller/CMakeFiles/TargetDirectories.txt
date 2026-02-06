@@ -1,0 +1,10 @@
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/uninstall.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/mrotor_controller_uninstall.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/att_sp_ctrl.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/test.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/edit_cache.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/rebuild_cache.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/list_install_components.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/install.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/install/local.dir
+/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles/install/strip.dir

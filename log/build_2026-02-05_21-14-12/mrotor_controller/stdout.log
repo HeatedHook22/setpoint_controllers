@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target att_sp_ctrl[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o[0m
+[100%] [32m[1mLinking CXX executable att_sp_ctrl[0m
+[100%] Built target att_sp_ctrl
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/package_run_dependencies/mrotor_controller
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/parent_prefix_path/mrotor_controller
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/ament_prefix_path.sh
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/path.sh
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/path.dsv
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.bash
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.sh
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.zsh
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.dsv
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/package.dsv
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/packages/mrotor_controller
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/cmake/mrotor_controllerConfig.cmake
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/cmake/mrotor_controllerConfig-version.cmake
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/package.xml

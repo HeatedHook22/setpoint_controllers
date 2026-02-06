@@ -1,0 +1,4 @@
+source;share/mrotor_controller/local_setup.bash
+source;share/mrotor_controller/local_setup.dsv
+source;share/mrotor_controller/local_setup.sh
+source;share/mrotor_controller/local_setup.zsh

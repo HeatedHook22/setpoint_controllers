@@ -1,0 +1,158 @@
+[0.000000] (-) TimerEvent: {}
+[0.000938] (mrotor_controller) JobQueued: {'identifier': 'mrotor_controller', 'dependencies': OrderedDict()}
+[0.001023] (mrotor_controller) JobStarted: {'identifier': 'mrotor_controller'}
+[0.014301] (mrotor_controller) JobProgress: {'identifier': 'mrotor_controller', 'progress': 'cmake'}
+[0.015174] (mrotor_controller) JobProgress: {'identifier': 'mrotor_controller', 'progress': 'build'}
+[0.016223] (mrotor_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller', '--', '-j16', '-l16'], 'cwd': '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'heated_2204'), ('GIT_ASKPASS', '/home/heated_2204/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/heated_2204/px4_globals/install/px4_ros_com/lib:/home/heated_2204/px4_globals/install/px4_msgs/lib:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_ros_com/lib:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/heated_2204'), ('OLDPWD', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-22038079-54ba-4122-9fe3-2746ed864ce6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/heated_2204/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/heated_2204/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install:/home/heated_2204/px4_globals/install:/home/heated_2204/px4_examples/ws_offboard_control/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'heated_2204'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/5402_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/heated_2204/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/remote-cli:/opt/ros/humble/bin:/home/heated_2204/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/Oculus/Support/oculus-runtime:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Python310/Scripts/:/mnt/c/Program Files/Python310/:/mnt/c/Users/natdn/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/natdn/AppData/Local/Programs/Python/Python310/Scripts:/mnt/c/Users/natdn/.dotnet/tools:/mnt/c/Users/natdn/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('WT_SESSION', '8eb55132-5ccb-43f5-a246-57befaf6ec3a'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9e2d2836fc.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller:/home/heated_2204/px4_globals/install/px4_ros_com:/home/heated_2204/px4_globals/install/px4_msgs:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_ros_com:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/heated_2204/px4_globals/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/heated_2204/px4_globals/install/px4_msgs/local/lib/python3.10/dist-packages:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller:/home/heated_2204/px4_globals/install/px4_ros_com:/home/heated_2204/px4_globals/install/px4_msgs:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_ros_com:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_msgs:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.061044] (mrotor_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099533] (-) TimerEvent: {}
+[0.199928] (-) TimerEvent: {}
+[0.204794] (mrotor_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.213551] (mrotor_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.300075] (-) TimerEvent: {}
+[0.400512] (-) TimerEvent: {}
+[0.471252] (mrotor_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.473479] (mrotor_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.479585] (mrotor_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.489101] (mrotor_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500705] (-) TimerEvent: {}
+[0.501645] (mrotor_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.534238] (mrotor_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.535562] (mrotor_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600869] (-) TimerEvent: {}
+[0.701374] (-) TimerEvent: {}
+[0.801714] (-) TimerEvent: {}
+[0.902064] (-) TimerEvent: {}
+[1.002498] (-) TimerEvent: {}
+[1.102855] (-) TimerEvent: {}
+[1.203181] (-) TimerEvent: {}
+[1.303524] (-) TimerEvent: {}
+[1.403861] (-) TimerEvent: {}
+[1.504231] (-) TimerEvent: {}
+[1.604634] (-) TimerEvent: {}
+[1.705035] (-) TimerEvent: {}
+[1.805581] (-) TimerEvent: {}
+[1.905938] (-) TimerEvent: {}
+[2.006303] (-) TimerEvent: {}
+[2.106638] (-) TimerEvent: {}
+[2.206988] (-) TimerEvent: {}
+[2.307286] (-) TimerEvent: {}
+[2.407610] (-) TimerEvent: {}
+[2.508112] (-) TimerEvent: {}
+[2.608526] (-) TimerEvent: {}
+[2.708917] (-) TimerEvent: {}
+[2.809400] (-) TimerEvent: {}
+[2.909779] (-) TimerEvent: {}
+[3.010143] (-) TimerEvent: {}
+[3.110468] (-) TimerEvent: {}
+[3.210813] (-) TimerEvent: {}
+[3.311155] (-) TimerEvent: {}
+[3.411592] (-) TimerEvent: {}
+[3.511992] (-) TimerEvent: {}
+[3.612347] (-) TimerEvent: {}
+[3.712680] (-) TimerEvent: {}
+[3.813189] (-) TimerEvent: {}
+[3.913641] (-) TimerEvent: {}
+[4.014058] (-) TimerEvent: {}
+[4.114465] (-) TimerEvent: {}
+[4.214814] (-) TimerEvent: {}
+[4.315118] (-) TimerEvent: {}
+[4.415490] (-) TimerEvent: {}
+[4.515871] (-) TimerEvent: {}
+[4.616285] (-) TimerEvent: {}
+[4.716712] (-) TimerEvent: {}
+[4.817097] (-) TimerEvent: {}
+[4.917440] (-) TimerEvent: {}
+[5.017784] (-) TimerEvent: {}
+[5.118154] (-) TimerEvent: {}
+[5.218474] (-) TimerEvent: {}
+[5.318817] (-) TimerEvent: {}
+[5.419275] (-) TimerEvent: {}
+[5.519713] (-) TimerEvent: {}
+[5.620171] (-) TimerEvent: {}
+[5.720591] (-) TimerEvent: {}
+[5.821123] (-) TimerEvent: {}
+[5.921485] (-) TimerEvent: {}
+[6.021945] (-) TimerEvent: {}
+[6.122308] (-) TimerEvent: {}
+[6.222695] (-) TimerEvent: {}
+[6.323139] (-) TimerEvent: {}
+[6.423644] (-) TimerEvent: {}
+[6.524020] (-) TimerEvent: {}
+[6.624462] (-) TimerEvent: {}
+[6.724828] (-) TimerEvent: {}
+[6.825245] (-) TimerEvent: {}
+[6.925665] (-) TimerEvent: {}
+[7.025982] (-) TimerEvent: {}
+[7.126291] (-) TimerEvent: {}
+[7.226632] (-) TimerEvent: {}
+[7.326917] (-) TimerEvent: {}
+[7.427206] (-) TimerEvent: {}
+[7.527543] (-) TimerEvent: {}
+[7.628020] (-) TimerEvent: {}
+[7.728494] (-) TimerEvent: {}
+[7.828869] (-) TimerEvent: {}
+[7.929296] (-) TimerEvent: {}
+[8.029658] (-) TimerEvent: {}
+[8.130027] (-) TimerEvent: {}
+[8.230440] (-) TimerEvent: {}
+[8.330780] (-) TimerEvent: {}
+[8.431096] (-) TimerEvent: {}
+[8.531402] (-) TimerEvent: {}
+[8.631829] (-) TimerEvent: {}
+[8.732265] (-) TimerEvent: {}
+[8.832562] (-) TimerEvent: {}
+[8.932973] (-) TimerEvent: {}
+[9.033457] (-) TimerEvent: {}
+[9.133833] (-) TimerEvent: {}
+[9.184733] (mrotor_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.230291] (mrotor_controller) StdoutLine: {'line': b'-- Found px4_msgs: 2.0.1 (/home/heated_2204/px4_globals/install/px4_msgs/share/px4_msgs/cmake)\n'}
+[9.233908] (-) TimerEvent: {}
+[9.240109] (mrotor_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[9.252350] (mrotor_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.334080] (-) TimerEvent: {}
+[9.339341] (mrotor_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.339587] (mrotor_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[9.339652] (mrotor_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.339982] (mrotor_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.340912] (mrotor_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.341035] (mrotor_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.341538] (mrotor_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.343354] (mrotor_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.360775] (mrotor_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[9.365773] (mrotor_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller\n'}
+[9.401742] (mrotor_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target att_sp_ctrl\x1b[0m\n'}
+[9.418464] (mrotor_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o\x1b[0m\n'}
+[9.434197] (-) TimerEvent: {}
+[9.534524] (-) TimerEvent: {}
+[9.634825] (-) TimerEvent: {}
+[9.735169] (-) TimerEvent: {}
+[9.764158] (mrotor_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable att_sp_ctrl\x1b[0m\n'}
+[9.835283] (-) TimerEvent: {}
+[9.935642] (-) TimerEvent: {}
+[10.034618] (mrotor_controller) StdoutLine: {'line': b'[100%] Built target att_sp_ctrl\n'}
+[10.035744] (-) TimerEvent: {}
+[10.050190] (mrotor_controller) CommandEnded: {'returncode': 0}
+[10.051007] (mrotor_controller) JobProgress: {'identifier': 'mrotor_controller', 'progress': 'install'}
+[10.063651] (mrotor_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller'], 'cwd': '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'heated_2204'), ('GIT_ASKPASS', '/home/heated_2204/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/heated_2204/px4_globals/install/px4_ros_com/lib:/home/heated_2204/px4_globals/install/px4_msgs/lib:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_ros_com/lib:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/heated_2204'), ('OLDPWD', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-22038079-54ba-4122-9fe3-2746ed864ce6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/heated_2204/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/heated_2204/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install:/home/heated_2204/px4_globals/install:/home/heated_2204/px4_examples/ws_offboard_control/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'heated_2204'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/5402_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/heated_2204/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/remote-cli:/opt/ros/humble/bin:/home/heated_2204/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/Oculus/Support/oculus-runtime:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Python310/Scripts/:/mnt/c/Program Files/Python310/:/mnt/c/Users/natdn/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/natdn/AppData/Local/Programs/Python/Python310/Scripts:/mnt/c/Users/natdn/.dotnet/tools:/mnt/c/Users/natdn/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('WT_SESSION', '8eb55132-5ccb-43f5-a246-57befaf6ec3a'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9e2d2836fc.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller:/home/heated_2204/px4_globals/install/px4_ros_com:/home/heated_2204/px4_globals/install/px4_msgs:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_ros_com:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/heated_2204/px4_globals/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/heated_2204/px4_globals/install/px4_msgs/local/lib/python3.10/dist-packages:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller:/home/heated_2204/px4_globals/install/px4_ros_com:/home/heated_2204/px4_globals/install/px4_msgs:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_ros_com:/home/heated_2204/px4_examples/ws_offboard_control/install/px4_msgs:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[10.073694] (mrotor_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.074181] (mrotor_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.075457] (mrotor_controller) StdoutLine: {'line': b'-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/lib/mrotor_controller/att_sp_ctrl\n'}
+[10.088312] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/package_run_dependencies/mrotor_controller\n'}
+[10.088663] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/parent_prefix_path/mrotor_controller\n'}
+[10.088848] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/ament_prefix_path.sh\n'}
+[10.089148] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/ament_prefix_path.dsv\n'}
+[10.089438] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/path.sh\n'}
+[10.089659] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/path.dsv\n'}
+[10.089878] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.bash\n'}
+[10.090067] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.sh\n'}
+[10.090316] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.zsh\n'}
+[10.090503] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.dsv\n'}
+[10.090626] (mrotor_controller) StdoutLine: {'line': b'-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/package.dsv\n'}
+[10.102830] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/packages/mrotor_controller\n'}
+[10.103129] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/cmake/mrotor_controllerConfig.cmake\n'}
+[10.103405] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/cmake/mrotor_controllerConfig-version.cmake\n'}
+[10.103504] (mrotor_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/package.xml\n'}
+[10.106311] (mrotor_controller) CommandEnded: {'returncode': 0}
+[10.125811] (mrotor_controller) JobEnded: {'identifier': 'mrotor_controller', 'rc': 0}
+[10.127020] (-) EventReactorShutdown: {}
