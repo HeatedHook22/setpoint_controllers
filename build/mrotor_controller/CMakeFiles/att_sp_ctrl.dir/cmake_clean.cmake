@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o"
   "CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o.d"
+  "CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o"
+  "CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o.d"
   "att_sp_ctrl"
   "att_sp_ctrl.pdb"
 )

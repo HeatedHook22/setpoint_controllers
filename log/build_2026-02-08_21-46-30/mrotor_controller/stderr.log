@@ -1,0 +1,10 @@
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:[m[K In member function ‘[01m[Kvoid nonlin::offboard_common::offboard_enable(bool)[m[K’:
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:72:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kenable[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   72 | void offboard_common::offboard_enable([01;35m[Kbool enable[m[K) {}
+      |                                       [01;35m[K~~~~~^~~~~~[m[K
+/usr/bin/ld: CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: in function `nonlin::offboard_common::offboard_common(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)::{lambda()#1}::operator()() const':
+offboard_common.cpp:(.text+0x5d): undefined reference to `nonlin::offboard_common::arm()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/att_sp_ctrl.dir/build.make:191: att_sp_ctrl] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/att_sp_ctrl.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

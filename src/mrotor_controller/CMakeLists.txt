@@ -23,7 +23,15 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(att_sp_ctrl src/attitude_setpoint_control.cpp)
+add_executable(att_sp_ctrl
+  src/attitude_setpoint_control.cpp
+  src/offboard_common.cpp
+)
+
+target_include_directories(att_sp_ctrl PRIVATE
+  "${CMAKE_CURRENT_SOURCE_DIR}/include"
+)
+
 ament_target_dependencies(att_sp_ctrl
   rclcpp
   px4_msgs

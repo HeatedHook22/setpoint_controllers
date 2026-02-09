@@ -35,7 +35,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 27,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
@@ -48,6 +48,12 @@
 				"command" : 3,
 				"file" : 0,
 				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -95,16 +101,20 @@
 			[
 				{
 					"backtrace" : 5,
+					"path" : "/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include"
+				},
+				{
+					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/rclcpp"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/geometry_msgs"
 				},
@@ -237,7 +247,8 @@
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -607,7 +618,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -617,6 +629,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/attitude_setpoint_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/offboard_common.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

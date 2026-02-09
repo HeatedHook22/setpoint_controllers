@@ -1,14 +1,60 @@
+#pragma once
+
+#include <rclcpp/rclcpp.hpp>
+#include <stdint.h>
+#include <string>
+
 namespace nonlin {
-class offboard_common {
+class offboard_common : public rclcpp::Node {
   public:
-    offboard_common();
+    offboard_common(std::string node_name);
     ~offboard_common() = default;
 
   private:
-    offboard_enable(bool enable);
-    offboard_keep_alive();
-    offboard_log();
+    uint64_t offboard_setpoint_counter{}; //!< counter for the number of
+                                          //!< setpoints sent
+    rclcpp::TimerBase::SharedPtr timer_{};
+    rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher{};
+    rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_publisher{};
+    rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher{};
 
-    // Maybe list experiments here?
+    // Publish commands taken from offboard_control.cpp example from PX4
+    /**
+     * @brief Publish vehicle commands
+     * @param command   Command code (matches VehicleCommand and MAVLink MAV_CMD
+     * codes)
+     * @param param1    Command parameter 1
+     * @param param2    Command parameter 2
+     */
+    void publish_vehicle_command(uint16_t command, float param1 = 0.0, float param2 = 0.0);
+
+    /**
+     * @brief Publish a trajectory setpoint
+     */
+    void publish_trajectory_setpoint();
+
+    /**
+     * @brief Publish the offboard control mode.
+     */
+    void publish_offboard_control_mode();
+
+    /**
+     * @brief Send a command to Arm the vehicle
+     */
+    void arm();
+
+    /// @brief Enable offboard control
+    void offboard_enable(bool enable);
+
+    /// @brief Keep alive call/timer
+    void offboard_keep_alive();
+
+    /// @brief Used for logging offboard controls
+    void offboard_log();
+
+    /// @brief Use to disarm the vehicle
+    void disarm();
+
+    // Maybe list experiments here as callables?
 };
 }; // namespace nonlin

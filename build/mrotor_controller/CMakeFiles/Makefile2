@@ -135,12 +135,12 @@ CMakeFiles/mrotor_controller_uninstall.dir/clean:
 CMakeFiles/att_sp_ctrl.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/att_sp_ctrl.dir/build.make CMakeFiles/att_sp_ctrl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/att_sp_ctrl.dir/build.make CMakeFiles/att_sp_ctrl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles --progress-num=1,2 "Built target att_sp_ctrl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles --progress-num=1,2,3 "Built target att_sp_ctrl"
 .PHONY : CMakeFiles/att_sp_ctrl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/att_sp_ctrl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/att_sp_ctrl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller/CMakeFiles 0
 .PHONY : CMakeFiles/att_sp_ctrl.dir/rule

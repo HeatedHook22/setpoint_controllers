@@ -234,6 +234,30 @@ src/attitude_setpoint_control.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/att_sp_ctrl.dir/build.make CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.s
 .PHONY : src/attitude_setpoint_control.cpp.s
 
+src/offboard_common.o: src/offboard_common.cpp.o
+.PHONY : src/offboard_common.o
+
+# target to build an object file
+src/offboard_common.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/att_sp_ctrl.dir/build.make CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o
+.PHONY : src/offboard_common.cpp.o
+
+src/offboard_common.i: src/offboard_common.cpp.i
+.PHONY : src/offboard_common.i
+
+# target to preprocess a source file
+src/offboard_common.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/att_sp_ctrl.dir/build.make CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.i
+.PHONY : src/offboard_common.cpp.i
+
+src/offboard_common.s: src/offboard_common.cpp.s
+.PHONY : src/offboard_common.s
+
+# target to generate assembly for a file
+src/offboard_common.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/att_sp_ctrl.dir/build.make CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.s
+.PHONY : src/offboard_common.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,6 +277,9 @@ help:
 	@echo "... src/attitude_setpoint_control.o"
 	@echo "... src/attitude_setpoint_control.i"
 	@echo "... src/attitude_setpoint_control.s"
+	@echo "... src/offboard_common.o"
+	@echo "... src/offboard_common.i"
+	@echo "... src/offboard_common.s"
 .PHONY : help
 
 

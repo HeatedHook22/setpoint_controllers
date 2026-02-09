@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/attitude_setpoint_control.cpp" "CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o" "gcc" "CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o.d"
+  "/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp" "CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o" "gcc" "CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o.d"
   )
 
 # Targets to which this target links.
