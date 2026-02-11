@@ -1,4 +1,5 @@
 #include <chrono>
+
 #include <px4_msgs/msg/offboard_control_mode.hpp>
 #include <px4_msgs/msg/trajectory_setpoint.hpp>
 #include <px4_msgs/msg/vehicle_command.hpp>
@@ -32,7 +33,7 @@ offboard_common::offboard_common(std::string node_name) : rclcpp::Node(node_name
         publish_offboard_control_mode();
         publish_trajectory_setpoint();
     };
-    timer_ = this->create_wall_timer(std::chrono::milliseconds(100), timer_callback);
+    timer = this->create_wall_timer(std::chrono::milliseconds(100), timer_callback);
 }
 
 // ------ Private ------ //

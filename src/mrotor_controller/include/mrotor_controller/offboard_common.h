@@ -1,8 +1,12 @@
 #pragma once
 
-#include <rclcpp/rclcpp.hpp>
 #include <stdint.h>
 #include <string>
+
+#include <px4_msgs/msg/offboard_control_mode.hpp>
+#include <px4_msgs/msg/trajectory_setpoint.hpp>
+#include <px4_msgs/msg/vehicle_command.hpp>
+#include <rclcpp/rclcpp.hpp>
 
 namespace nonlin {
 class offboard_common : public rclcpp::Node {
@@ -13,7 +17,7 @@ class offboard_common : public rclcpp::Node {
   private:
     uint64_t offboard_setpoint_counter{}; //!< counter for the number of
                                           //!< setpoints sent
-    rclcpp::TimerBase::SharedPtr timer_{};
+    rclcpp::TimerBase::SharedPtr timer{};
     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher{};
     rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_publisher{};
     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher{};

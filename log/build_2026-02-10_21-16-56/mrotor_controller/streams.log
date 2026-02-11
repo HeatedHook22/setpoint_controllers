@@ -1,0 +1,67 @@
+[0.020s] Invoking command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller -- -j16 -l16
+[0.114s] [35m[1mConsolidate compiler generated dependencies of target att_sp_ctrl[0m
+[0.147s] [ 33%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o[0m
+[3.334s] In file included from [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/attitude_setpoint_control.cpp:3[m[K:
+[3.334s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:17:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ was not declared in this scope
+[3.334s]    17 |     rclcpp::Publisher<[01;31m[Kpx4_msgs[m[K::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher{};
+[3.334s]       |                       [01;31m[K^~~~~~~~[m[K
+[3.334s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:17:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.334s]    17 |     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode[01;31m[K>[m[K::SharedPtr offboard_control_mode_publisher{};
+[3.334s]       |                                                         [01;31m[K^[m[K
+[3.334s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:17:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.334s]    17 |     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::[01;31m[KSharedPtr[m[K offboard_control_mode_publisher{};
+[3.334s]       |                                                            [01;31m[K^~~~~~~~~[m[K
+[3.334s]       |                                                                     [32m[K;[m[K
+[3.338s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:17:70:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_control_mode_publisher[m[K’ does not name a type
+[3.338s]    17 |     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr [01;31m[Koffboard_control_mode_publisher[m[K{};
+[3.339s]       |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.339s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:17:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[3.339s]    17 |     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher{}[01;35m[K;[m[K
+[3.339s]       |                                                                                                       [01;35m[K^[m[K
+[3.339s]       |                                                                                                       [31m[K-[m[K
+[3.345s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:18:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ was not declared in this scope
+[3.345s]    18 |     rclcpp::Publisher<[01;31m[Kpx4_msgs[m[K::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_publisher{};
+[3.345s]       |                       [01;31m[K^~~~~~~~[m[K
+[3.345s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:18:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.345s]    18 |     rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint[01;31m[K>[m[K::SharedPtr trajectory_setpoint_publisher{};
+[3.345s]       |                                                        [01;31m[K^[m[K
+[3.345s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:18:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.345s]    18 |     rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::[01;31m[KSharedPtr[m[K trajectory_setpoint_publisher{};
+[3.345s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[3.346s]       |                                                                    [32m[K;[m[K
+[3.346s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:18:59:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint nonlin::offboard_common::SharedPtr[m[K’
+[3.346s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:17:60:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint nonlin::offboard_common::SharedPtr[m[K’
+[3.346s]    17 |     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::[01;36m[KSharedPtr[m[K offboard_control_mode_publisher{};
+[3.346s]       |                                                            [01;36m[K^~~~~~~~~[m[K
+[3.348s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:18:69:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher[m[K’ does not name a type
+[3.349s]    18 |     rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr [01;31m[Ktrajectory_setpoint_publisher[m[K{};
+[3.349s]       |                                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.349s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:18:100:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[3.349s]    18 |     rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_publisher{}[01;35m[K;[m[K
+[3.349s]       |                                                                                                    [01;35m[K^[m[K
+[3.349s]       |                                                                                                    [31m[K-[m[K
+[3.355s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:19:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ was not declared in this scope
+[3.356s]    19 |     rclcpp::Publisher<[01;31m[Kpx4_msgs[m[K::msg::VehicleCommand>::SharedPtr vehicle_command_publisher{};
+[3.356s]       |                       [01;31m[K^~~~~~~~[m[K
+[3.356s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:19:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.356s]    19 |     rclcpp::Publisher<px4_msgs::msg::VehicleCommand[01;31m[K>[m[K::SharedPtr vehicle_command_publisher{};
+[3.356s]       |                                                    [01;31m[K^[m[K
+[3.356s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:19:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.356s]    19 |     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::[01;31m[KSharedPtr[m[K vehicle_command_publisher{};
+[3.356s]       |                                                       [01;31m[K^~~~~~~~~[m[K
+[3.356s]       |                                                                [32m[K;[m[K
+[3.356s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:19:55:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint nonlin::offboard_common::SharedPtr[m[K’
+[3.357s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:17:60:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint nonlin::offboard_common::SharedPtr[m[K’
+[3.357s]    17 |     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::[01;36m[KSharedPtr[m[K offboard_control_mode_publisher{};
+[3.357s]       |                                                            [01;36m[K^~~~~~~~~[m[K
+[3.359s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:19:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_command_publisher[m[K’ does not name a type
+[3.359s]    19 |     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr [01;31m[Kvehicle_command_publisher[m[K{};
+[3.359s]       |                                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.359s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h:19:92:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[3.359s]    19 |     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher{}[01;35m[K;[m[K
+[3.359s]       |                                                                                            [01;35m[K^[m[K
+[3.359s]       |                                                                                            [31m[K-[m[K
+[3.913s] gmake[2]: *** [CMakeFiles/att_sp_ctrl.dir/build.make:76: CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o] Error 1
+[3.913s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/att_sp_ctrl.dir/all] Error 2
+[3.914s] gmake: *** [Makefile:146: all] Error 2
+[3.917s] Invoked command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller -- -j16 -l16

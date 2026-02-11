@@ -1,0 +1,11 @@
+[0.027s] Invoking command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller -- -j16 -l16
+[0.137s] [35m[1mConsolidate compiler generated dependencies of target att_sp_ctrl[0m
+[0.166s] [ 33%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o[0m
+[0.324s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/attitude_setpoint_control.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kinclude/mrotor_controller/offboard_common.h: No such file or directory
+[0.324s]     3 | #include [01;31m[K"include/mrotor_controller/offboard_common.h"[m[K
+[0.324s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.324s] compilation terminated.
+[0.328s] gmake[2]: *** [CMakeFiles/att_sp_ctrl.dir/build.make:76: CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o] Error 1
+[0.329s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/att_sp_ctrl.dir/all] Error 2
+[0.329s] gmake: *** [Makefile:146: all] Error 2
+[0.334s] Invoked command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller -- -j16 -l16
