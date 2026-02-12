@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target att_sp_ctrl[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:8[m[K:
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:[m[K In member function ‘[01m[Kvoid nonlin::offboard_common::arm()[m[K’:
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:83:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+   83 |     rclcpp::[01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Arm command send");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:[m[K In member function ‘[01m[Kvoid nonlin::offboard_common::disarm()[m[K’:
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:89:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+   89 |     rclcpp::[01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Disarm command send");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:[m[K In member function ‘[01m[Kvoid nonlin::offboard_common::offboard_enable(bool)[m[K’:
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:92:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kenable[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   92 | void offboard_common::offboard_enable([01;35m[Kbool enable[m[K) {}
+      |                                       [01;35m[K~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/att_sp_ctrl.dir/build.make:90: CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/att_sp_ctrl.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

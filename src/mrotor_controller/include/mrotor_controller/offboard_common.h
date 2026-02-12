@@ -21,6 +21,14 @@ class offboard_common : public rclcpp::Node {
     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher{};
     rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_publisher{};
     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher{};
+    enum offboard_control_mode_enums : uint8_t {
+        NONE = 0b0,
+        POSITION = 0b1,
+        VELOCITY = 0b10,
+        ACCELERATION = 0b100,
+        ATTITUDE = 0b1000,
+        BODY_RATE = 0b10000
+    };
 
     // Publish commands taken from offboard_control.cpp example from PX4
     /**
@@ -35,17 +43,22 @@ class offboard_common : public rclcpp::Node {
     /**
      * @brief Publish a trajectory setpoint
      */
-    void publish_trajectory_setpoint();
+    void publish_trajectory_setpoint(float x, float y, float z, float yaw = -M_PI);
 
     /**
-     * @brief Publish the offboard control mode.
+     * @brief Publish the offboard control mode. Bitwise OR (|) the offboard_control_mode_enums together to enable specific modes
      */
-    void publish_offboard_control_mode();
+    void publish_offboard_control_mode(uint8_t offboard_control_mode);
 
     /**
      * @brief Send a command to Arm the vehicle
      */
     void arm();
+
+    /**
+     * @brief Send a command to Disarm the vehicle
+     */
+    void disarm();
 
     /// @brief Enable offboard control
     void offboard_enable(bool enable);
@@ -55,9 +68,6 @@ class offboard_common : public rclcpp::Node {
 
     /// @brief Used for logging offboard controls
     void offboard_log();
-
-    /// @brief Use to disarm the vehicle
-    void disarm();
 
     // Maybe list experiments here as callables?
 };

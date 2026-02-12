@@ -1,0 +1,30 @@
+[0.024s] Invoking command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller -- -j16 -l16
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target att_sp_ctrl[0m
+[0.152s] [ 33%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o[0m
+[4.241s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:[m[K In member function ‘[01m[Kvoid nonlin::offboard_common::offboard_enable(bool)[m[K’:
+[4.241s] [01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:92:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kenable[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.241s]    92 | void offboard_common::offboard_enable([01;35m[Kbool enable[m[K) {}
+[4.241s]       |                                       [01;35m[K~~~~~^~~~~~[m[K
+[7.635s] [ 66%] [32m[1mLinking CXX executable att_sp_ctrl[0m
+[8.124s] [100%] Built target att_sp_ctrl
+[8.147s] Invoked command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller -- -j16 -l16
+[8.165s] Invoking command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller
+[8.176s] -- Install configuration: ""
+[8.177s] -- Execute custom install script
+[8.178s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/lib/mrotor_controller/att_sp_ctrl
+[8.178s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/package_run_dependencies/mrotor_controller
+[8.179s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/parent_prefix_path/mrotor_controller
+[8.179s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/ament_prefix_path.sh
+[8.179s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/ament_prefix_path.dsv
+[8.179s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/path.sh
+[8.180s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/path.dsv
+[8.180s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.bash
+[8.180s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.sh
+[8.180s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.zsh
+[8.181s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.dsv
+[8.181s] -- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/package.dsv
+[8.195s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/packages/mrotor_controller
+[8.196s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/cmake/mrotor_controllerConfig.cmake
+[8.196s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/cmake/mrotor_controllerConfig-version.cmake
+[8.196s] -- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/package.xml
+[8.200s] Invoked command in '/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/build/mrotor_controller

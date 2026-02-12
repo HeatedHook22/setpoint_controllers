@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target att_sp_ctrl[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o[0m

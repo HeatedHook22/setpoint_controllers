@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target att_sp_ctrl[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o[0m
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:[m[K In member function ‘[01m[Kvoid nonlin::offboard_common::offboard_enable(bool)[m[K’:
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:84:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kenable[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 | void offboard_common::offboard_enable([01;35m[Kbool enable[m[K) {}
+      |                                       [01;35m[K~~~~~^~~~~~[m[K
+[ 66%] [32m[1mLinking CXX executable att_sp_ctrl[0m
+[100%] Built target att_sp_ctrl
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/lib/mrotor_controller/att_sp_ctrl
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/package_run_dependencies/mrotor_controller
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/parent_prefix_path/mrotor_controller
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/path.sh
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/environment/path.dsv
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.bash
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.sh
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.zsh
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/local_setup.dsv
+-- Symlinking: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/package.dsv
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/ament_index/resource_index/packages/mrotor_controller
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/cmake/mrotor_controllerConfig.cmake
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/cmake/mrotor_controllerConfig-version.cmake
+-- Up-to-date symlink: /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/install/mrotor_controller/share/mrotor_controller/package.xml

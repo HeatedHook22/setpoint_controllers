@@ -1,0 +1,17 @@
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:[m[K In member function ‘[01m[Kvoid nonlin::offboard_common::publish_offboard_control_mode(uint8_t)[m[K’:
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:70:63:[m[K [01;35m[Kwarning: [m[Kenum constant in boolean context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-in-bool-context-Wint-in-bool-context]8;;[m[K]
+   70 |     msg.velocity = static_cast<bool>(offboard_control_mode && [01;35m[KVELOCITY[m[K);
+      |                                                               [01;35m[K^~~~~~~~[m[K
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:71:67:[m[K [01;35m[Kwarning: [m[Kenum constant in boolean context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-in-bool-context-Wint-in-bool-context]8;;[m[K]
+   71 |     msg.acceleration = static_cast<bool>(offboard_control_mode && [01;35m[KACCELERATION[m[K);
+      |                                                                   [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:72:63:[m[K [01;35m[Kwarning: [m[Kenum constant in boolean context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-in-bool-context-Wint-in-bool-context]8;;[m[K]
+   72 |     msg.attitude = static_cast<bool>(offboard_control_mode && [01;35m[KATTITUDE[m[K);
+      |                                                               [01;35m[K^~~~~~~~[m[K
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:73:64:[m[K [01;35m[Kwarning: [m[Kenum constant in boolean context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-in-bool-context-Wint-in-bool-context]8;;[m[K]
+   73 |     msg.body_rate = static_cast<bool>(offboard_control_mode && [01;35m[KBODY_RATE[m[K);
+      |                                                                [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:[m[K In member function ‘[01m[Kvoid nonlin::offboard_common::offboard_enable(bool)[m[K’:
+[01m[K/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/src/offboard_common.cpp:84:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kenable[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 | void offboard_common::offboard_enable([01;35m[Kbool enable[m[K) {}
+      |                                       [01;35m[K~~~~~^~~~~~[m[K

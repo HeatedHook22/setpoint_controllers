@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 #include "mrotor_controller/offboard_common.h"
 
