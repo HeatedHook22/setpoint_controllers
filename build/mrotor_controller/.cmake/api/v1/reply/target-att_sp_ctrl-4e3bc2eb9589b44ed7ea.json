@@ -29,13 +29,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 26,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 35,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
@@ -47,13 +47,13 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 5,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 31,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
@@ -80,6 +80,9 @@
 				{
 					"backtrace" : 4,
 					"fragment" : "-Wpedantic"
+				},
+				{
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"defines" : 
@@ -245,6 +248,14 @@
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "17"
+			},
 			"sourceIndexes" : 
 			[
 				0,

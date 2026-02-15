@@ -166,9 +166,8 @@ CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude_setpoint.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
@@ -187,8 +186,8 @@ CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o: \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__builder.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__traits.hpp \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
  /usr/include/c++/11/codecvt /usr/include/c++/11/bits/codecvt.h \
@@ -199,22 +198,13 @@ CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o: \
  /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/c++/11/bits/quoted_string.h \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.hpp \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/trajectory_setpoint.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__struct.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__traits.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp \
+ /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/attitude_setpoint_control.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -634,4 +624,25 @@ CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+ /home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include/mrotor_controller/offboard_common.h \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/trajectory_setpoint.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__struct.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__traits.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_odometry.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__struct.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp
