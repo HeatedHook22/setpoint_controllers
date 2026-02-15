@@ -29,13 +29,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 31,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 40,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
@@ -53,7 +53,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 36,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
@@ -105,6 +105,10 @@
 				{
 					"backtrace" : 5,
 					"path" : "/home/heated_2204/nonlin_ctrl_lab/setpoint_controllers/src/mrotor_controller/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/usr/include/eigen3"
 				},
 				{
 					"backtrace" : 6,

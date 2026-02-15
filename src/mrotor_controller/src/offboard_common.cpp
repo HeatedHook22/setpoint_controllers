@@ -7,7 +7,7 @@
 #include <px4_msgs/msg/trajectory_setpoint.hpp>
 #include <px4_msgs/msg/vehicle_command.hpp>
 #include <px4_msgs/msg/vehicle_control_mode.hpp>
-#include <px4_msgs/msg/vehicle_odometry.hpp>
+#include <px4_msgs/msg/vehicle_local_position.hpp>
 #include <rclcpp/rclcpp.hpp>
 
 #include "mrotor_controller/offboard_common.h"
@@ -16,36 +16,37 @@ namespace nonlin {
 // ------ Public ------ //
 offboard_common::offboard_common(std::string node_name) : rclcpp::Node(node_name) {
     // Constructor mostly from offboard_control.cpp example from PX4
-    offboard_control_mode_publisher = this->create_publisher<px4_msgs::msg::OffboardControlMode>("/fmu/in/offboard_control_mode", 10);
-    trajectory_setpoint_publisher = this->create_publisher<px4_msgs::msg::TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 10);
-    vehicle_command_publisher = this->create_publisher<px4_msgs::msg::VehicleCommand>("/fmu/in/vehicle_command", 10);
+    auto qos_pub = rclcpp::QoS(10).best_effort();
+    offboard_control_mode_publisher = this->create_publisher<px4_msgs::msg::OffboardControlMode>("/fmu/in/offboard_control_mode", qos_pub);
+    trajectory_setpoint_publisher = this->create_publisher<px4_msgs::msg::TrajectorySetpoint>("/fmu/in/trajectory_setpoint", qos_pub);
+    vehicle_command_publisher = this->create_publisher<px4_msgs::msg::VehicleCommand>("/fmu/in/vehicle_command", qos_pub);
 
     // Create a QoS profile that matches PX4 (Best Effort)
     rmw_qos_profile_t qos_profile = rmw_qos_profile_sensor_data;
     auto qos = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);
-    local_position_subscription = this->create_subscription<px4_msgs::msg::VehicleOdometry>(
-        "/fmu/out/vehicle_odometry", qos, std::bind(&offboard_common::local_position_callback, this, std::placeholders::_1));
+    local_position_subscription = this->create_subscription<px4_msgs::msg::VehicleLocalPosition>(
+        "/fmu/out/vehicle_local_position_v1", qos, std::bind(&offboard_common::get_kinematics_callback, this, std::placeholders::_1));
 
     auto timer_callback = [this]() -> void {
-        if (offboard_setpoint_counter == 10) {
-            // Change to Offboard mode after 10 setpoints
+        if (offboard_setpoint_counter == 100) {
+            // Change to Offboard mode after 100 setpoints
             this->publish_vehicle_command(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
 
             // Arm the vehicle
             this->arm();
-            RCLCPP_INFO(this->get_logger(), "Moving to intial flight position");
+            RCLCPP_INFO(this->get_logger(), "Moving to initial flight position");
         }
 
-        // Stop the counter after reaching 11
-        if (offboard_setpoint_counter < 11) {
+        // Stop the counter after reaching 110
+        if (offboard_setpoint_counter < 110) {
             offboard_setpoint_counter++;
         }
 
-        if (!mode_switched && !((std::abs(current_x - x_pos) < 0.1) && (std::abs(current_y - y_pos) < 0.1) &&
-                                (std::abs(current_z - z_pos) < 0.1))) { // Within 0.1m radius
+        if (!mode_switched && !((std::abs(current_pos[0] - initial_pos[0]) < 0.1) && (std::abs(current_pos[1] - initial_pos[1]) < 0.1) &&
+                                (std::abs(current_pos[2] - initial_pos[2]) < 0.1))) { // Within 0.1m radius
             // OffboardControlMode needs to be paired with TrajectorySetpoint (default)
             publish_offboard_control_mode(static_cast<uint8_t>(POSITION));
-            publish_trajectory_setpoint(x_pos, y_pos, z_pos);
+            publish_trajectory_setpoint(initial_pos[0], initial_pos[1], initial_pos[2]);
         } else {
             // Offboard control mode and setpoint control/logic
             if (!mode_switched) {
@@ -55,7 +56,7 @@ offboard_common::offboard_common(std::string node_name) : rclcpp::Node(node_name
             this->offboard_control_mode_logic();
         }
     };
-    timer = this->create_wall_timer(std::chrono::milliseconds(50), timer_callback);
+    timer = this->create_wall_timer(std::chrono::milliseconds(20), timer_callback);
 }
 
 void offboard_common::publish_offboard_control_mode(uint8_t offboard_control_mode) {
@@ -114,9 +115,17 @@ void offboard_common::disarm() {
     RCLCPP_INFO(this->get_logger(), "Disarm command send");
 }
 
-void offboard_common::local_position_callback(const px4_msgs::msg::VehicleOdometry::SharedPtr msg) {
-    current_x = msg->position[0];
-    current_y = msg->position[1];
-    current_z = msg->position[2];
+void offboard_common::get_kinematics_callback(const px4_msgs::msg::VehicleLocalPosition::SharedPtr msg) {
+    current_pos[0] = msg->x;
+    current_pos[1] = msg->y;
+    current_pos[2] = msg->z;
+
+    current_vel[0] = msg->vx;
+    current_vel[1] = msg->vy;
+    current_vel[2] = msg->vz;
+
+    current_acc[0] = msg->ax;
+    current_acc[1] = msg->ay;
+    current_acc[2] = msg->az;
 }
 }; // namespace nonlin

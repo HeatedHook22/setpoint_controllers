@@ -1,7 +1,7 @@
 set(_AMENT_PACKAGE_NAME "mrotor_controller")
 set(mrotor_controller_VERSION "0.0.0")
 set(mrotor_controller_MAINTAINER "heated_2204 <nswhitta@ualberta.ca>")
-set(mrotor_controller_BUILD_DEPENDS "rclcpp" "px4_msgs" "geometry_msgs")
+set(mrotor_controller_BUILD_DEPENDS "eigen" "rclcpp" "px4_msgs" "geometry_msgs")
 set(mrotor_controller_BUILDTOOL_DEPENDS "ament_cmake")
 set(mrotor_controller_BUILD_EXPORT_DEPENDS "rclcpp" "px4_msgs" "geometry_msgs")
 set(mrotor_controller_BUILDTOOL_EXPORT_DEPENDS )

@@ -1,13 +1,13 @@
 #pragma once
 
-#include <atomic>
+#include <Eigen/Dense>
 #include <stdint.h>
 #include <string>
 
 #include <px4_msgs/msg/offboard_control_mode.hpp>
 #include <px4_msgs/msg/trajectory_setpoint.hpp>
 #include <px4_msgs/msg/vehicle_command.hpp>
-#include <px4_msgs/msg/vehicle_odometry.hpp>
+#include <px4_msgs/msg/vehicle_local_position.hpp>
 #include <rclcpp/rclcpp.hpp>
 
 namespace nonlin {
@@ -34,25 +34,35 @@ class offboard_common : public rclcpp::Node {
      */
     void publish_offboard_control_mode(uint8_t offboard_control_mode);
 
+    void position_control();
+
+    void velocity_control();
+
+    void acceleration_control();
+
   private:
     uint64_t offboard_setpoint_counter{}; //!< counter for the number of setpoints sent
 
-    float x_pos = 0.f;
-    float y_pos = 0.f;
-    float z_pos = -2.3f;
     bool mode_switched = false;
 
-    // Maybe move to 
-    std::atomic<float> current_x = 0.f;
-    std::atomic<float> current_y = 0.f;
-    std::atomic<float> current_z = 0.f;
+    Eigen::Vector3f initial_pos = {0.f, 0.f, -2.5f};
+
+    // Current vehicle measurements
+    Eigen::Vector3f current_pos{};
+    Eigen::Vector3f current_vel{};
+    Eigen::Vector3f current_acc{};
+
+    // Current error measurements
+    Eigen::Vector3f pos_error{};
+    Eigen::Vector3f vel_error{};
+    Eigen::Vector3f acc_error{};
 
     rclcpp::TimerBase::SharedPtr timer{};
     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher{};
     rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_publisher{};
     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher{};
 
-    rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr local_position_subscription{};
+    rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr local_position_subscription{};
 
     // Publish commands taken from offboard_control.cpp example from PX4
     /**
@@ -81,7 +91,7 @@ class offboard_common : public rclcpp::Node {
     void disarm();
 
     /// @brief Used to track the current position of the vehicle
-    void local_position_callback(const px4_msgs::msg::VehicleOdometry::SharedPtr msg);
+    void get_kinematics_callback(const px4_msgs::msg::VehicleLocalPosition::SharedPtr msg);
     // Maybe list experiments here as callables?
 };
 }; // namespace nonlin

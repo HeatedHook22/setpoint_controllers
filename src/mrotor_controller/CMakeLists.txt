@@ -15,6 +15,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(px4_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(Eigen3 REQUIRED)
+if(NOT EIGEN3_FOUND)
+  # Fallback for some systems
+  set(EIGEN3_INCLUDE_DIRS "/usr/include/eigen3")
+endif()
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -35,12 +40,14 @@ add_executable(att_sp_ctrl
 
 target_include_directories(att_sp_ctrl PRIVATE
   "${CMAKE_CURRENT_SOURCE_DIR}/include"
+  ${EIGEN3_INCLUDE_DIRS}
 )
 
 ament_target_dependencies(att_sp_ctrl
   rclcpp
   px4_msgs
   geometry_msgs
+  Eigen3
 )
 
 install(TARGETS
