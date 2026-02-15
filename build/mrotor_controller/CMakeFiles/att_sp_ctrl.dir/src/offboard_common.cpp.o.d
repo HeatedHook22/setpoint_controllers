@@ -127,8 +127,8 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/hover_thrust_estimate.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__struct.hpp \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/memory \
@@ -193,8 +193,8 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: \
  /usr/include/c++/11/stdexcept \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__builder.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__traits.hpp \
  /usr/include/c++/11/sstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
@@ -222,12 +222,17 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: \
  /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/c++/11/bits/quoted_string.h \
- /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__type_support.hpp \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/trajectory_setpoint.hpp \
  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__struct.hpp \
  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \

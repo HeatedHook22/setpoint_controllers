@@ -826,6 +826,11 @@ CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/hover_thrust_estimate.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__struct.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__builder.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__traits.hpp \
+ /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__type_support.hpp \
  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \

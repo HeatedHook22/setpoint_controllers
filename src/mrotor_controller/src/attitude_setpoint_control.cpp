@@ -18,18 +18,26 @@ void attitude_setpoint_control::offboard_control_mode_logic() { this->publish_at
 void attitude_setpoint_control::publish_attitude_setpoint() {
     this->publish_offboard_control_mode(offboard_common::ATTITUDE);
 
+    Eigen::Vector3f pos_sp(5.f, 5.f, -5.f); // NED
+    auto v_sp = position_control(pos_sp);
+    auto a_sp = velocity_control(v_sp);
+    auto [q_d, thrust] = acceleration_control(a_sp);
+
+    // Eigen::Vector3f a_sp(0.0f, 0.0f, 0.0f); // Hardcode: Hover only
+    // auto [q_d, thrust] = acceleration_control(a_sp);
+
     px4_msgs::msg::VehicleAttitudeSetpoint msg{};
     // Set the orientation [w, x, y, z]
-    msg.q_d[0] = 1.f;
-    msg.q_d[1] = 0.0f;
-    msg.q_d[2] = 0.0f;
-    msg.q_d[3] = 0.0f;
+    msg.q_d[0] = q_d.w();
+    msg.q_d[1] = q_d.x(); // Flip (x-y) for PX4?
+    msg.q_d[2] = q_d.y();
+    msg.q_d[3] = q_d.z();
 
     // Uses Front-Right-Down format
-    msg.thrust_body[0] = 0.f;
-    msg.thrust_body[1] = 0.f;
-    msg.thrust_body[2] = -0.75f;
-    msg.yaw_sp_move_rate = 0.0f;
+    msg.thrust_body[0] = thrust[0];
+    msg.thrust_body[1] = thrust[1];
+    msg.thrust_body[2] = thrust[2];
+    msg.yaw_sp_move_rate = yaw_sp;
     msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
 
     attitude_setpoint_publisher->publish(msg);

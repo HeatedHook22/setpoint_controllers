@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <string>
 
+#include <px4_msgs/msg/hover_thrust_estimate.hpp>
 #include <px4_msgs/msg/offboard_control_mode.hpp>
 #include <px4_msgs/msg/trajectory_setpoint.hpp>
 #include <px4_msgs/msg/vehicle_command.hpp>
@@ -13,6 +14,9 @@
 namespace nonlin {
 class offboard_common : public rclcpp::Node {
   public:
+    // Don't really care about yaw
+    const float yaw_sp = 0.f;
+
     enum offboard_control_mode_enums : uint8_t {
         NONE = 0b0,
         POSITION = 0b1,
@@ -34,18 +38,37 @@ class offboard_common : public rclcpp::Node {
      */
     void publish_offboard_control_mode(uint8_t offboard_control_mode);
 
-    void position_control();
+    Eigen::Vector3f position_control(const Eigen::Vector3f &pos_sp);
 
-    void velocity_control();
+    Eigen::Vector3f velocity_control(const Eigen::Vector3f &vel_sp);
 
-    void acceleration_control();
+    std::pair<Eigen::Quaternionf, Eigen::Vector3f> acceleration_control(const Eigen::Vector3f &acc_sp);
 
   private:
     uint64_t offboard_setpoint_counter{}; //!< counter for the number of setpoints sent
 
     bool mode_switched = false;
+    float hover_thrust_estimate = 0.7275f; // Default fallback (from testing), QGroundControl says 0.6
 
     Eigen::Vector3f initial_pos = {0.f, 0.f, -2.5f};
+    std::chrono::time_point<std::chrono::high_resolution_clock> prev_time{};
+    std::chrono::time_point<std::chrono::high_resolution_clock> now{}; // Current time of program loop
+    float dt = 0.f;
+
+    // Position controller PID terms
+    const float kp_pos = 0.5f;
+    Eigen::Vector3f prev_pos_sp{};
+
+    // Velocity controller PID terms
+    const float kp_vel = 0.05f;
+    const float ki_vel = 0.01f;
+    const float kd_vel = 0.f;
+    Eigen::Vector3f integral_acc_error{};
+    Eigen::Vector3f prev_vel_sp{};
+    Eigen::Vector3f prev_vel{};
+
+    // Acceleration controller terms
+    const Eigen::Vector3f gravity_vector{0.0f, 0.0f, 9.81f};
 
     // Current vehicle measurements
     Eigen::Vector3f current_pos{};
@@ -63,6 +86,7 @@ class offboard_common : public rclcpp::Node {
     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher{};
 
     rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr local_position_subscription{};
+    rclcpp::Subscription<px4_msgs::msg::HoverThrustEstimate>::SharedPtr hover_thrust_estimate_subscription{};
 
     // Publish commands taken from offboard_control.cpp example from PX4
     /**
@@ -90,8 +114,12 @@ class offboard_common : public rclcpp::Node {
      */
     void disarm();
 
-    /// @brief Used to track the current position of the vehicle
+    /// @brief Used to track the current position/velocity/acceleration of the vehicle
     void get_kinematics_callback(const px4_msgs::msg::VehicleLocalPosition::SharedPtr msg);
+
+    /// @brief Used to track the estimated hover thrust of the vehicle
+    void get_hover_thrust_estimate_callback(const px4_msgs::msg::HoverThrustEstimate::SharedPtr msg);
+
     // Maybe list experiments here as callables?
 };
 }; // namespace nonlin

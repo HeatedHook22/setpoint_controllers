@@ -899,6 +899,11 @@ CMakeFiles/att_sp_ctrl.dir/src/attitude_setpoint_control.cpp.o: /home/heated_220
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/hover_thrust_estimate.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__struct.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__builder.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__traits.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__type_support.hpp \
   /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
   /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
   /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
@@ -1074,8 +1079,8 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: /home/heated_2204/nonlin_c
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
-  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
-  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/hover_thrust_estimate.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__struct.hpp \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
@@ -1157,8 +1162,8 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: /home/heated_2204/nonlin_c
   /usr/include/c++/11/stdexcept \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
-  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__builder.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__traits.hpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/ios \
@@ -1195,12 +1200,17 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: /home/heated_2204/nonlin_c
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
-  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__type_support.hpp \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+  /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
   /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/trajectory_setpoint.hpp \
   /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__struct.hpp \
   /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
@@ -1865,6 +1875,10 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: /home/heated_2204/nonlin_c
 
 /home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp:
 
+/home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__type_support.hpp:
+
+/home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__struct.hpp:
+
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
@@ -1988,6 +2002,8 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: /home/heated_2204/nonlin_c
 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
 /usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
+
+/home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__traits.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
 
@@ -2919,6 +2935,8 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: /home/heated_2204/nonlin_c
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
+/home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/hover_thrust_estimate.hpp:
+
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
@@ -3220,6 +3238,8 @@ CMakeFiles/att_sp_ctrl.dir/src/offboard_common.cpp.o: /home/heated_2204/nonlin_c
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
+
+/home/heated_2204/px4_globals/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__builder.hpp:
 
 /usr/include/eigen3/Eigen/Eigenvalues:
 
